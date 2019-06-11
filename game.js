@@ -23,8 +23,8 @@ var enemies = {
 };
 
 var OBJECT_PLAYER = 1,
-    OBJECT_PLAYER_PROJECTILE = 2,
-    OBJECT_ENEMY = 2,
+    OBJECT_PLAYER_PROJECTILE = 4,
+    OBJECT_ENEMY = 4,
     OBJECT_ENEMY_PROJECTILE = 8,
     OBJECT_POWERUP = 16;
 
@@ -39,8 +39,8 @@ var startGame = function() {
     Game.setBoard(1,new Starfield(50,0.6,100));
     Game.setBoard(2,new Starfield(100,1.0,50));
   }
-  Game.setBoard(3,new TitleScreen("Ahoj la wai",
-                                  "Press fire to start playing",
+  Game.setBoard(3,new TitleScreen("Tom's Improved Alien Invasion Game 🚀",
+                                  "Press fire to start losing",
                                   playGame));
 };
 
